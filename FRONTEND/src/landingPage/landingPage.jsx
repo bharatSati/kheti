@@ -47,7 +47,7 @@ function NavBar(){
 
         async function userChecker(){
             try{
-            let response = await axios.get("http://localhost:3000/users/check",{
+            let response = await axios.get("https://kheti-yda3.vercel.app/users/check",{
             headers:{
                 authorization : "Bearer " + localStorage.getItem("token")}
             })

@@ -21,7 +21,7 @@ export default function EditProfile() {
     useEffect(() => {
         async function existingDetails() {
             try {
-                let response = await axios.get("http://localhost:3000/users/me", {
+                let response = await axios.get("https://kheti-yda3.vercel.app/users/me", {
                     headers: {
                         authorization: "Bearer " + localStorage.getItem("token")
                     }
@@ -84,7 +84,7 @@ export default function EditProfile() {
         input.append("city", city);
 
         try {
-            let response = await axios.put("http://localhost:3000/users/update", input,
+            let response = await axios.put("https://kheti-yda3.vercel.app/users/update", input,
                 {
                     headers: {
                         authorization: "Bearer " + token

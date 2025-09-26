@@ -21,7 +21,7 @@ export function SignorLog(props){
     if(!localStorage.getItem("token")) return;
         async function userChecker(){
             try{
-            let response = await axios.get("http://localhost:3000/users/check",{
+            let response = await axios.get("https://kheti-yda3.vercel.app/users/check",{
             headers:{
                 authorization : "Bearer " + localStorage.getItem("token")}
             })
@@ -49,7 +49,7 @@ async function signupHandler(){
     for(let i = 0;i<inputPassword.length;i++){
         if(inputPassword[i]!=" ") password+=inputPassword[i];}
     try{
-        let response  = await axios.post("http://localhost:3000/users/signup",{
+        let response  = await axios.post("https://kheti-yda3.vercel.app/users/signup",{
             username,
             password,})
         localStorage.setItem("token",response.data.token);
@@ -83,7 +83,7 @@ async function loginHandler(){
     for(let i = 0;i<inputPassword.length;i++){
         if(inputPassword[i]!=" ") password+=inputPassword[i];}
     try{
-        let response  = await axios.post("http://localhost:3000/users/signin",{
+        let response  = await axios.post("https://kheti-yda3.vercel.app/users/signin",{
             username,
             password,})
         localStorage.setItem("token",response.data.token);

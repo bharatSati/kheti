@@ -25,7 +25,7 @@ export default function Create(){
 
         async function userChecker(){
             try{
-            let response = await axios.get("http://localhost:3000/users/check",{
+            let response = await axios.get("https://kheti-yda3.vercel.app/users/check",{
             headers:{
                 authorization : "Bearer " + localStorage.getItem("token")}
             })
@@ -69,7 +69,7 @@ export default function Create(){
     
             
     try{
-        let response = await axios.get("https://nest-al8l.vercel.app/products/count",{
+        let response = await axios.get("https://kheti-yda3.vercel.app/products/count",{
             headers:{
                 authorization: "Bearer " + localStorage.getItem("token")}
         })
@@ -106,7 +106,7 @@ export default function Create(){
             input.append("policy",policy);
             input.append("type",type);
         try{
-            let response = await axios.post("https://nest-al8l.vercel.app/products/add",input,{
+            let response = await axios.post("https://kheti-yda3.vercel.app/add",input,{
                 headers:{
                     authorization: "Bearer "+localStorage.getItem("token")}
     })

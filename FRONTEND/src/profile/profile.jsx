@@ -27,7 +27,7 @@ export default function Profile() {
 
         async function profileInfo() {
             try {
-                const response = await axios.get(`http://localhost:3000/users/profile?id=${askedId}`, {
+                const response = await axios.get(`https://kheti-yda3.vercel.app/users/profile?id=${askedId}`, {
                     headers: { authorization: "Bearer " + localStorage.getItem("token") }
                 });
 
@@ -53,7 +53,7 @@ export default function Profile() {
 
         async function productFinder() {
             try {
-                const response = await axios.get(`http://localhost:3000/products/productsInfo?userId=${userId}`, {
+                const response = await axios.get(`https://kheti-yda3.vercel.app/products/productsInfo?userId=${userId}`, {
                     headers: { authorization: "Bearer " + localStorage.getItem("token") }
                 });
                 setProducts(response.data);
@@ -74,7 +74,7 @@ export default function Profile() {
 
         async function fetchPOTD() {
             try {
-                const response = await axios.get(`http://localhost:3000/potd/userPotd?userId=${userId}`, {
+                const response = await axios.get(`https://kheti-yda3.vercel.app/potd/userPotd?userId=${userId}`, {
                     headers: { authorization: "Bearer " + localStorage.getItem("token") }
                 });
 
@@ -128,7 +128,7 @@ export default function Profile() {
                 />
             </div>
 
-            {/* Products Section */}
+           
             <div className="myProduct">MY PRODUCTS</div>
             <div className="cardContainerProfile">
                 {products.length ? (
@@ -166,7 +166,7 @@ function CardRendererProfile({ finalUser, productInfo, setRerun }) {
                 <div className="buttonHolderr">
                     <button onClick={async () => {
                         try {
-                            await axios.delete(`http://localhost:3000/products/delete`, {
+                            await axios.delete(`https://kheti-yda3.vercel.app/products/delete`, {
                                 data: { productId },
                                 headers: { authorization: "Bearer " + localStorage.getItem("token") }
                             });

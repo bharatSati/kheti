@@ -27,7 +27,7 @@ export default function Feed() {
 
     async function fetchFeed() {
         try {
-            const userRes = await axios.get("http://localhost:3000/users/me", {
+            const userRes = await axios.get("https://kheti-yda3.vercel.app/users/me", {
                 headers: { authorization: "Bearer " + localStorage.getItem("token") },
             });
 
@@ -38,7 +38,7 @@ export default function Feed() {
             }
 
             const feedRes = await axios.get(
-                `http://localhost:3000/feed/getFeed?latitude=${latitude}&longitude=${longitude}`,
+                `https://kheti-yda3.vercel.app/getFeed?latitude=${latitude}&longitude=${longitude}`,
                 { headers: { authorization: "Bearer " + localStorage.getItem("token") } }
             );
 
@@ -68,7 +68,7 @@ export default function Feed() {
             setIsSubmitting(true);
             toast.info("Submitting POTD...");
 
-            const res = await axios.post("http://localhost:3000/potd/addPotd", formData, {
+            const res = await axios.post("https://kheti-yda3.vercel.app/potd/addPotd", formData, {
                 headers: {
                     authorization: "Bearer " + localStorage.getItem("token"),
                     "Content-Type": "multipart/form-data"

@@ -21,7 +21,7 @@ export default function Postfeed(){
 
         async function userChecker(){
             try{
-                await axios.get("http://localhost:3000/users/check",{
+                await axios.get("https://kheti-yda3.vercel.app/users/check",{
                     headers:{ authorization : "Bearer " + localStorage.getItem("token") }
                 })
             }
@@ -55,7 +55,7 @@ export default function Postfeed(){
         input.append("details",details);
 
         try{
-            let response = await axios.post("http://localhost:3000/feed/addPost",input,{
+            let response = await axios.post("https://kheti-yda3.vercel.app/feed/addPost",input,{
                 headers:{ authorization: "Bearer "+localStorage.getItem("token") }
             })
             toast.success(response.data.message);

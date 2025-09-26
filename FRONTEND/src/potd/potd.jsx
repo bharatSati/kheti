@@ -16,7 +16,7 @@ export default function Potd() {
     useEffect(() => {
         async function fetchPotdImages() {
             try {
-                const res = await axios.get("http://localhost:3000/potd/potdImages", {
+                const res = await axios.get("https://kheti-yda3.vercel.app/potd/potdImages", {
                     headers: { authorization: "Bearer " + localStorage.getItem("token") }
                 });
 

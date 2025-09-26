@@ -14,7 +14,7 @@ export function NavBar2() {
   useEffect(() => {
     async function avatarFinder() {
       try {
-        let response = await axios.get("https://nest-al8l.vercel.app/users/me", {
+        let response = await axios.get("https://kheti-yda3.vercel.app/users/me", {
           headers: {
             authorization: "Bearer " + localStorage.getItem("token")
           }

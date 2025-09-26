@@ -28,7 +28,7 @@ export default function Products(){
     useEffect(()=>{
         async function usersFind(){
             try{
-                let response = await axios.get(`http://localhost:3000/products/filter?q=${searchRef.current.value}`,{
+                let response = await axios.get(`https://kheti-yda3.vercel.app/products/filter?q=${searchRef.current.value}`,{
                 headers:{
                     authorization: "Bearer "+localStorage.getItem("token")}
             })
@@ -88,7 +88,7 @@ export default function Products(){
 
         async function clickIncreaser(){
             try{
-                let response = await axios.put("https://nest-al8l.vercel.app/products/clicks",{
+                let response = await axios.put("https://kheti-yda3.vercel.app/products/clicks",{
                 productId: productDetail._id,
                 clicks: productDetail.clicks},
                 {
