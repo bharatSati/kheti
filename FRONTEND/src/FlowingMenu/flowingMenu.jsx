@@ -2,7 +2,7 @@ import React from 'react';
 import { gsap } from 'gsap';
 import { useNavigate } from 'react-router-dom'; // <-- import navigate
 
-import './FlowingMenu.css';
+import './flowingMenu.css';
 
 function FlowingMenu({ items = [] }) {
   const navigate = useNavigate(); // <-- get navigate function
