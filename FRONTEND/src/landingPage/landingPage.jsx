@@ -440,7 +440,7 @@ function Footer(){
     return(
         <div className = "footer">
             <div className="topFooter">
-                <div className="logoFooter">N E S T</div>
+                <div className="logoFooter">K H E T I</div>
                 <div className="aboutDeveloper">
                     <div className="headingDeveloper">ABOUT DEVELOPER</div>
                     <div className="contentDeveloper">We are Team Kheti, a group of six passionate students from GBPUAT Pantnagar, united by a clear vision to serve farmers. Driven by technology and innovation, we have created a digital platform that connects, empowers, and supports farmers across the nation. By helping farmers thrive, our project not only strengthens agricultural communities but also contributes to the growth and development of the country automatically.</div>

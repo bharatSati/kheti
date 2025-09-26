@@ -243,7 +243,7 @@
 }
 
 .letsgo{
-  border: 2px solid rgb(47, 255, 0);
+  border: 2px solid rgb(120, 223, 252);
    font-family: "Bungee", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -260,7 +260,7 @@ box-shadow: rgba(255, 255, 255, 0.25) 0px 13px 27px -5px, rgba(255, 255, 255, 0.
 }
 
 .letsgo:hover{
-  background-color:rgb(47, 255, 0);
+  background-color:rgb(120, 223, 252);
   color: black;
 }
 
