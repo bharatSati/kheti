@@ -1,0 +1,250 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.main{
+    height: 100vh;
+}
+
+.signUpBg{
+    height: 100%;
+    display: flex;
+ }
+
+
+
+
+.infooo{
+    height: 100%;
+    width: 65%;
+    backdrop-filter: blur(3px);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.174);
+    background-image: url("b.png");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 0px 5px 1px black;
+    display: flex;
+ 
+
+}
+
+.signUpBox{
+    display: flex;
+    width: 35%;
+    flex-direction: column;
+}
+
+.headingSign{
+
+    font-family: "Monoton", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 550;
+    font-style: normal;
+    font-size: 70px;
+    height: 25%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.welcome{
+    font-family: "Bungee", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 30px;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcomeMessage{
+    font-size: 12px;
+ font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+    height: 10%;
+    display: flex;
+    text-align: center;
+    padding: 10px;
+}
+
+.set{
+      font-size: 18px;
+
+    position: relative;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.statement{
+      font-family: "Bungee", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 100;
+      font-size: 12px;
+      height: 40%;
+      margin-left: 20%;
+      display: flex;
+      align-items: end;
+}
+
+.set .input{
+    border-radius: 5px;
+     font-family: "Roboto Mono", monospace;
+     font-optical-sizing: auto;
+     font-weight: 500;
+    height: 40%;
+    font-size: 15px;
+    margin-left: 20%;
+    width: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.171);
+    display: flex;
+    padding-left: 3%;
+    padding-right: 3%;
+
+}
+
+.set .input:focus {
+  outline: none;
+}
+
+
+
+
+
+
+#login{
+    margin-top: 20px;
+     font-family: "Bungee", sans-serif;
+      font-size: 16px;
+    height: 6%;
+    margin-left: 20%;
+    width: 50%;
+    border: 0px;
+    color: rgba(0, 0, 0, 0.742);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%);
+     transition: 0.5s;
+            background-size: 200% auto;
+    border-radius: 5px;
+       display: block;}
+
+
+#login:hover{
+     background-position: right center; 
+            color: #fff;
+            text-decoration: none;
+}
+
+.last{
+    font-size: 5px;
+    height: 10%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s1,.s2{
+    height: auto;
+    width: auto;
+       font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.s2{
+    color: blue;
+}
+
+
+@media (max-width: 1000px){
+    .main{
+         
+        background: #c9d6ff; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #c9d6ff, #e2e2e2); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #c9d6ff, #e2e2e2); 
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        height: 100vh;
+          background-image: url("b.png");
+    background-size: cover;
+    background-position: center;
+    }
+
+    .signUpBg{
+        width: 70%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 95%;
+    }
+
+    .infooo{
+        display: none;
+        height: 0%;
+        
+    }
+    
+ 
+.signUpBox{
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.445);
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.274);
+    display: flex;
+    width: 100%;
+    height: 85vh;
+   
+}
+
+}
+
+@media (max-width: 600px){
+    .signUpBg{
+        width: 90%;
+    }
+
+    
+.set .input{
+    margin-left: 10%;
+    width: 80%;
+}
+
+#login{
+    margin-left: 10%;
+    width: 80%;
+    font-size: 15px;
+}
+
+
+.statement{
+      margin-left: 10%;
+   
+}
+
+
+.welcome{
+    
+  font-size: 20px;
+}
+
+.welcomeMessage{
+    font-size: 12px;
+    padding: 5px;
+}
+
+.s1 , .s2{
+    font-size: 10px;
+}
+
+
+
+}

@@ -1,0 +1,51 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.navBody{
+    position: relative;
+    z-index: 101;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.216);
+    height: 10vh;
+    width: 100vw;
+    background-color: black;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+}
+
+
+.menuu {
+    height: 60%;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer; 
+}
+
+
+
+.avatar{
+    height: calc(10vh - 30px);
+    width: calc(10vh - 30px);
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid white;
+    border-radius: 100000px;
+    overflow: hidden;
+}
+
+.flow{
+    position: fixed;
+    top : 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index:  102;
+    background-color: rgba(0,0,0,0.85);
+}

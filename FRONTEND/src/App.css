@@ -1,0 +1,10 @@
+
+
+@media(max-width: 500px) {
+
+.Toastify__toast-container {
+    padding-right: 10px !important;
+
+}
+
+}

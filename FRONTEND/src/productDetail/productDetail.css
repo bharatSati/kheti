@@ -1,0 +1,548 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+.detailPage{
+    height: auto;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+
+}
+
+ .productDetailPage{
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    color: white;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+         
+
+
+
+
+.backgrnd{
+    z-index: 1;
+    margin-top: 20px;
+     display: block;
+     border-radius: 10px;
+    transition: 0.5s;
+            background-size: 200% auto;
+    background-image: linear-gradient(to right, #a4dbff  0%, #000000  51%, #a4dbff  100%);
+    height: auto;
+    padding: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.304);
+}
+
+
+
+
+
+.imageBox{
+    height: 70vh;
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.imageBox img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: cover;
+    border-radius: 10px;
+    transition: transform 0.5s ease-out;
+} 
+
+
+.imageBox img:hover{
+    transform: scale(1.1);
+   
+} 
+
+
+.extraInfo{
+    height: auto;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+
+
+
+.title{
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to right, rgb(0, 0, 0), white);
+     background-clip: text; 
+      color: transparent; 
+    width: 100%;
+    font-size: 30px; 
+    padding-top: 20px;
+    padding-bottom: 30px;
+    overflow: hidden;
+ font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 900;
+}
+
+
+.logoAndName{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+
+}
+
+
+.logo{
+    width: 10vh;
+    overflow: hidden;
+}
+
+.logo img{
+     border-radius: 1000000000px;
+     object-fit: cover;
+     object-position: center;
+    height: 100%;
+    width: 100%;
+    transition: 0s;
+}
+
+
+
+.nameAndDateDetails{
+    height: 10vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.nameDetails{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: end;
+    height: 70%;
+    padding-left: 30px;
+ font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 20px;
+  color: black;
+  transition: 2s;
+}
+
+.dateDetails{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    height: 30%;
+    padding-left: 30px;
+    font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.616);
+  transition: 2s;
+}
+
+.tagDetails{
+    margin: auto;
+    width: 30vh;
+    border-radius: 5px;
+    height: 70%;
+    border: 2px solid rgba(255, 255, 255, 0.478);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+       font-family: "Bungee", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 16px;
+  transition: 2s;
+}
+
+
+
+.backgrnd:hover {
+    box-shadow: 0px 0px 10px 1px white;
+    background-position: right center; 
+    color: #fff;
+    text-decoration: none;
+}
+
+.backgrnd:hover  .tagDetails{
+    color: black;
+    border: 2px solid black;
+}
+
+
+.backgrnd:hover  .title{
+     background: linear-gradient(to right, rgb(255, 255, 255), rgb(0, 0, 0));
+      background-clip: text; 
+      -webkit-text-fill-color: transparent;
+      color: transparent; 
+}
+
+
+
+.backgrnd:hover  .dateDetails{
+     color: rgba(255, 255, 255, 0.47);
+}
+
+
+
+.backgrnd:hover  .nameDetails{
+     color: rgb(255, 255, 255);
+}
+
+
+
+
+.gapDetails{
+    height: 100px;
+}
+
+
+
+.sliderooo{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+@media(max-width: 1050px){
+
+   
+
+
+.imageBox{
+    width: 700px;
+}
+
+
+.title{
+    font-size: 25px; 
+}
+
+
+
+
+.extraInfo{
+    width: 700px;
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+@media(max-width: 900px){
+
+
+.backgrnd{
+    padding: 20px;
+
+}
+
+
+
+.imageBox{
+    width: 500px;
+    height: 50vh;
+}
+
+
+.title{
+    font-size: 25px; 
+}
+
+
+
+
+.extraInfo{
+    width: 500px;
+
+}
+
+
+.logoAndName{
+    height: 8vh;
+    width: 100%;
+    display: flex;
+
+}
+
+
+.logo{
+    width: 8vh;
+    overflow: hidden;
+}
+
+
+
+.nameAndDateDetails{
+    height: 8vh;
+    width: 50%;
+
+}
+
+
+.nameDetails{
+    align-items: center;
+    padding-left: 20px;
+  font-weight: 900;
+  font-size: 16px;}
+
+.dateDetails{
+    display: flex;
+    align-items: start;
+  font-weight: 900;
+  font-size: 12px;
+  padding-left: 20px;
+}
+
+.tagDetails{
+    margin: auto;
+    border-radius: 5px;
+    height: 70%;
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.478);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+       font-family: "Bungee", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 16px;
+  transition: 2s;
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+@media(max-width: 600px){
+
+
+.backgrnd{
+    padding: 10px;
+
+}
+
+
+
+.imageBox{
+    width: 430px;
+    height: 50vh;
+}
+
+
+.title{
+    font-size: 25px; 
+}
+
+
+
+
+.extraInfo{
+    width: 400px;
+
+}
+
+
+.logoAndName{
+    height: 8vh;
+    width: 100%;
+    display: flex;
+
+}
+
+
+.logo{
+    width: 8vh;
+    overflow: hidden;
+}
+
+
+
+.nameAndDateDetails{
+    height: 8vh;
+    width: 50%;
+
+}
+
+
+.nameDetails{
+    align-items: center;
+    padding-left: 20px;
+  font-weight: 900;
+  font-size: 16px;}
+
+.dateDetails{
+    display: flex;
+    align-items: start;
+  font-weight: 900;
+  font-size: 12px;
+  padding-left: 20px;
+}
+
+.tagDetails{
+    margin: auto;
+    border-radius: 5px;
+    height: 70%;
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.478);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+       font-family: "Bungee", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 14px;
+  transition: 2s;
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+@media(max-width: 500px){
+
+
+.backgrnd{
+    padding: 10px;
+
+}
+
+
+
+.imageBox{
+    width: 320px;
+    height: 40vh;
+}
+
+
+.title{
+    font-size: 20px; 
+}
+
+
+
+
+.extraInfo{
+    width: 300px;
+
+}
+
+
+.logoAndName{
+    height: 6vh;
+    width: 100%;
+    display: flex;
+
+}
+
+
+.logo{
+    width: 6vh;
+    overflow: hidden;
+}
+
+
+
+.nameAndDateDetails{
+    height: 6vh;
+    width: auto;
+
+}
+
+
+.nameDetails{
+    align-items: center;
+    padding-left: 20px;
+  font-weight: 900;
+  font-size: 15px;}
+
+
+.dateDetails{
+    display: flex;
+    align-items: start;
+  font-weight: 900;
+  font-size: 10px;
+  padding-left: 20px;
+}
+
+
+
+.tagDetails{
+    display: none;
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+

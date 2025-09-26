@@ -1,0 +1,251 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.cover{
+   z-index: 10;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.163);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     font-size: 14px;
+    font-weight: 600;
+     font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 900;
+}
+
+
+.editBox{
+    position: relative;
+    width: 50%;
+    height: 90%;
+     background-color: rgba(0, 0, 0, 0.715);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+.editBox img{
+    position: absolute;
+    top: 2%;
+    left: 93%;
+    height: 7%;
+}
+
+
+.bottom{
+    margin-top: 10%;
+    height: 80%;
+    width: 100%;
+}
+
+.inputHolder{
+    height: 15%;
+    width: 100%;
+    display:flex;
+    align-items: center;
+}
+
+.inputHolderLast{
+    height: 30%;
+    width: 100%;
+    display:flex;
+    align-items: center;
+}
+
+.text{
+    font-size: 25px;
+    font-family: "Bungee", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    color: #50f0ff;
+    width: 40%;
+    margin-left: 80px;
+}
+
+.inputFile{
+    margin: 40px;
+    border-radius: 5px;
+    height: 50%;
+    width: 40%;
+    border: 0px solid black;
+    
+    
+}
+
+.input:focus{
+    outline: none;
+}
+
+
+.inputFile input[type="file"]::file-selector-button {
+  
+
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+input[type="file"] {
+    
+  color: white;
+}
+
+
+input:focus{
+    outline: none;
+}
+
+.input{
+    resize: none;
+    scrollbar-width: none;
+     margin: 40px;
+     font-size: 12px;
+ font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+    box-shadow: 0px 0px 1px 0px white;
+    border-radius: 5px;
+    padding: 10px;
+     height: 50%;
+    width: 40%;
+
+}
+
+
+
+.editChange{
+    height: 10%;
+    width: 40%;
+    margin-left: 30%;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 600;
+     font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  background-color: yellow;
+  border-radius: 5px;
+}
+
+
+@media (max-width: 1300px){
+    .editBox{
+        width: 70%;
+    }
+}
+
+
+
+@media (max-width: 900px){
+    .editBox{
+        width: 90%;
+    }
+
+    .editBox img{
+    position: absolute;
+    top: 2%;
+    left: 91%;
+    height: 7%;
+}
+}
+
+@media (max-width: 700px){
+    .editBox{
+        width: 95%;
+    }
+
+    .text{
+        margin-left: 40px;
+        font-size: 15px;
+        width: 30%;
+    }
+
+    
+.editBox img{
+    position: absolute;
+    top: 2%;
+    left: 91%;
+    height: 7%;
+}
+
+}
+
+
+
+@media (max-width: 650px){
+    .editBox img{
+    position: absolute;
+    top: 2%;
+    left: 90%;
+    height: 7%;
+}
+}
+
+
+
+
+@media (max-width: 650px){
+    .editBox img{
+    position: absolute;
+    top: 2%;
+    left: 88%;
+    height: 5%;
+}
+}
+
+
+
+@media (max-width: 400px){
+
+    .text{
+        margin-left: 40px;
+        font-size: 13px;
+        width: 30%;
+    }
+
+    
+.editBox img{
+    position: absolute;
+    top: 2%;
+    left: 88%;
+    height: 5%;
+}
+
+}
+
+
+
+
+
+.locationBtn {
+  margin-left: 40px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background: #50f0ff;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+   font-size: 12px;
+    font-weight: 600;
+     font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 900;
+}
+
+.locationBtn:hover {
+  background: #00c8d8;
+}

@@ -1,0 +1,468 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+.profilePage{
+    width: 100%;
+    color: white;
+    background-color: black;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.bannerAndInfo{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.bannerProfile{
+    height: 26vh;
+
+}
+
+.bannerProfile img{
+   
+    height: 100%;
+     width: 100%;
+    object-fit: cover;
+    object-position: 50% 70%;
+}
+
+
+
+.infoProfile{
+    border-bottom: 2px solid rgba(255, 255, 255, 0.296);
+    height: 14vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.points{
+    position: absolute;
+    right: 40px;
+    top: 45vh;
+     font-size: 10px;
+ font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 900;
+    height: 50px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(39, 33, 33);
+    border-radius: 5px;
+}
+
+
+@media(max-width: 500px){
+.points{
+    top: 35vh;
+}
+}
+
+.points img{
+   height: 40px;
+   width: 40px;
+   object-fit: cover;
+}
+
+.countPoints{
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photoProfile{
+    z-index: 10;
+    position: absolute;
+    left: 10%;
+    top: -18vh;
+    height: 24vh;
+    width: 24vh;
+    background-color: white;
+    border-radius: 100000px;
+    overflow: hidden;
+    border: 3px solid white;
+}
+
+
+.photoProfile img{
+      height: 100%;
+     width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.infoo{
+    height: 100%;
+     margin-left: 30%;
+     width: 50%;
+     display: flex;
+     flex-direction: column;}
+
+    
+.nameProfile{
+
+  font-size: 25px;
+ font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 900;
+    height: 60%;
+    display: flex;
+    align-items: end;
+    line-height: 20px;
+}
+       
+
+
+
+.usernameProfile{
+height: 40%;
+  font-size: 16px;
+ font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+    height: 40%;
+    display: flex;
+    align-items: center;
+
+}
+
+.hostelProfile{
+    font-size: 16px;
+ font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+    height: 30%;
+    display: flex;
+    align-items: center;
+
+}
+
+.button{
+    cursor: pointer;
+     font-family: "Bungee", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 0;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.823);
+    margin: auto;
+    display: flex;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    background-color: rgb(147, 233, 255);
+    border-radius: 2px;
+    
+}
+
+
+
+
+
+
+.myProduct{
+   font-family: "Bungee", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.549);
+    margin-left: 10%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.cardContainerProfile{
+
+    padding-bottom: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.108);
+    width: 100%;
+  
+    background-color: rgba(255, 255, 255, 0.082);
+    padding: 20px;
+        padding-top: 40px;
+          padding-bottom: 40px;
+    display: grid;
+    row-gap: 40px;
+    column-gap: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(350px,450px));
+    justify-items: center;
+    justify-content: center;
+}
+
+.cardProfile{
+    background-color: black;
+    height: auto;
+    width: 85%;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+box-shadow: 0px 0px 17px -2px rgba(173, 245, 255, 0.67);
+-webkit-box-shadow: 0px 0px 17px -2px  rgba(173, 245, 255, 0.67);
+-moz-box-shadow: 0px 0px 17px -2px  rgba(173, 245, 255, 0.67);
+}
+
+
+.cardProfile:hover{
+    box-shadow: 0px 0px 25px -2px rgb(255, 255, 255);
+-webkit-box-shadow: 0px 0px 25px -2px rgb(255, 255, 255);
+-moz-box-shadow: 0px 0px 25px -2px rgb(255, 255, 255);
+}
+
+
+.productImgProfile{
+    height: 30vh;
+
+}
+
+.productImgProfile img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: cover;
+ 
+
+}
+
+.roll{
+    font-weight: 900;
+    
+}
+
+.titleProfile{
+    overflow-wrap: break-word;
+    text-align: center;
+    font-size: 16px;
+ font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 1000;
+       padding: 10px;
+    height: auto;
+    overflow: scroll;
+    scrollbar-width: none;
+    
+}
+
+.buttonHolderr{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+
+.buttonHolderr button{
+    cursor: pointer;
+        font-family: "Bungee", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 0;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.816);
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 0px;
+    background-color: rgb(255, 248, 199);
+    border-radius: 2px;
+      
+}
+
+
+.buttonHolderr button:hover{
+   box-shadow: 0px 0px 17px -2px rgba(173, 245, 255, 0.67);
+-webkit-box-shadow: 0px 0px 17px -2px  rgba(173, 245, 255, 0.67);
+-moz-box-shadow: 0px 0px 17px -2px  rgba(173, 245, 255, 0.67);
+transform: scale(1.01);
+}
+
+
+.contact{
+    padding: 30px;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.108);
+    margin-left: 0%;
+    background-color: rgba(255, 255, 255, 0.082);
+    font-size: 16px;
+ font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  height: auto;
+  overflow-wrap: break-word;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.lastSpace{
+    height: 5vh;
+}
+
+
+
+
+@media(max-width:1000px){
+
+    
+.infoo{
+    
+     margin-left: 40%;
+     width: 30%;
+     display: flex;
+     flex-direction: column;}
+
+    
+}
+
+
+
+
+@media(max-width:700px){
+
+    
+.infoo{
+    
+     margin-left: 10%;
+     width: 50%;}
+
+
+    .photoProfile{
+    left: calc(50vw - 12vh);
+    top: -25vh;
+    height: 24vh;
+    width: 24vh;
+    background-color: white;
+    border-radius: 100000px;
+    overflow: hidden;
+    border: 3px solid white;
+}
+}
+
+
+
+@media(max-width:500px){
+
+
+.bannerAndInfo{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+}
+
+    
+
+.bannerProfile{
+    height: 20vh;
+
+}
+
+
+
+.infoProfile{
+    height: 10vh;
+}
+
+.photoProfile{
+    left: calc(50% - 8vh);
+    top: -18vh;
+    height: 16vh;
+    width: 16vh;
+}
+
+
+    
+.nameProfile{
+
+  font-size: 18px;
+}
+       
+
+
+
+.usernameProfile{
+    
+  font-size: 12px;
+}
+
+
+
+.button{
+  font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding: 10px;
+}
+
+
+.myProduct{
+    display: flex;
+    justify-content: center;
+ margin: 0px;
+
+  font-size: 25px;
+}
+
+
+
+.cardContainerProfile{
+    grid-template-columns: repeat(auto-fit,minmax(300px,300px));
+}
+
+
+
+.productImgProfile{
+    height: 25vh;
+
+}
+
+
+.titleProfile{
+
+    font-size: 12px;
+    
+}
+
+
+
+.buttonHolderr{
+    height: 8vh;
+}
+
+.buttonHolderr button{
+    
+  font-size: 12px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+      
+}
+
+.contact{
+    font-size: 12px;
+}
+
+
+
+}
+
+
+

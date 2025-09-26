@@ -1,0 +1,388 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.smallCard{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.smallCard img{
+    z-index: 0;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  object-position: center;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+.bgHeroo1{
+  z-index: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(0px);
+  background-color: rgba(0, 0, 0, 0.247);
+}
+
+
+.bgHeroo2{
+  z-index: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+   background: linear-gradient(to bottom, transparent 70%, black 100%);
+}
+
+
+
+.bgHeroo3{
+  z-index: 0;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+   background: linear-gradient(to top, transparent 70%, black 100%);
+}
+
+
+
+.headingSmallCard{
+    z-index: 2;
+     font-family: "Bungee", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+    font-size: 50px;
+    margin-left: 7.5%;
+    padding-bottom: 40px;
+    color: rgba(255, 255, 255, 0.529);
+}
+
+
+.smallCardContainer{
+    z-index: 2;
+    overflow: hidden;
+    height: auto;
+    padding: 20px;
+    display:grid;
+    row-gap: 50px;
+    column-gap: 50px;
+    grid-template-columns: repeat(3,330px);
+    justify-content: center;
+    justify-items: center;
+}
+
+
+
+
+
+
+.cardSmallDetail{
+    background-image:  linear-gradient(to right, #dce35b39 0%, #45b6492d  51%, #dce35b45  100%);
+    backdrop-filter: blur(5px);
+    border: 2px solid rgba(255, 255, 255, 0.474);
+     display: block;
+     transition: 0.5s;
+            background-size: 200% auto;
+    
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+  
+}
+
+
+.headingSmallCardDetail{
+    transition: 2s;
+     font-family: "Bungee", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     padding: 20px;
+     padding-top: 20px;
+     padding-bottom: 10px;
+    height: auto;
+    color: white;
+    
+}
+
+.contentSmallCard{
+    transition: 2s;
+    color: black;
+    overflow: hidden;
+  font-size: 16px;
+ font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 900;
+    
+     padding: 20px;
+    height: auto;
+}
+
+
+
+
+
+
+.cardSmallDetail:hover {
+   border: 2px solid rgba(255, 255, 255, 0.671);
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+         
+
+
+.cardSmallDetail:hover  .headingSmallCardDetail{
+           color: black;
+          }
+
+
+          
+.cardSmallDetail:hover  .contentSmallCard {
+           color: white;
+          }
+
+
+@media(max-width:1200px){
+    
+.smallCardContainer{
+    height: auto;
+    padding: 20px;
+    display:grid;
+    row-gap: 50px;
+    column-gap: 50px;
+    grid-template-columns: repeat(2,330px);
+    justify-content: center;
+    justify-items: center;
+}
+
+}
+
+
+
+@media(max-width:800px){
+    
+.headingSmallCard{
+     font-family: "Bungee", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+    font-size: 30px;
+    margin-left: 7.5%;
+    padding-bottom: 10px;
+}
+
+    
+.smallCardContainer{
+    height: auto;
+    padding: 20px;
+    display:grid;
+    row-gap: 30px;
+    column-gap: 30px;
+    grid-template-columns: repeat(2,250px);
+    justify-content: center;
+    justify-items: center;
+}
+
+}
+
+
+@media(max-width:600px){
+    
+.smallCardContainer{
+    height: auto;
+    padding: 20px;
+    display:grid;
+    row-gap: 30px;
+    column-gap: 30px;
+    grid-template-columns: repeat(1,330px);
+    justify-content: center;
+    justify-items: center;
+}
+
+}
+
+
+
+.footer{
+    position: relative;
+    z-index: 11;
+    height: auto;
+    -webkit-user-drag: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(22, 17, 17);
+}
+
+.topFooter{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    padding-left: 10%;
+    padding-right: 10%;
+    border-top: 1px solid rgba(255, 255, 255, 0.264);
+    height: auto;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+
+
+.logoFooter{
+    overflow: hidden;
+    width: 30%;
+    height: 100%;
+      font-family: "Monoton", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+
+}
+
+.aboutDeveloper{
+    overflow: hidden;
+    width: 40%;
+    height: 100%;
+}
+
+
+.headingDeveloper{
+    overflow: hidden;
+     font-family: "Bungee", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 22px;
+    height: 30%;
+    width: 100%;
+    padding: 3%;
+    display: flex;
+   
+    align-items: center;
+}
+
+.contentDeveloper{
+    overflow: hidden;
+      overflow: hidden;
+  font-size: 14px;
+ font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+    height: 70%;
+    padding: 3%;
+}
+
+
+
+.midFooter{
+    
+    border: 1px solid rgba(255, 255, 255, 0.225);
+    width: 80%;
+    margin: auto;
+
+}
+
+
+
+.bottomFooter{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.midFooter a{
+    text-decoration: none;
+}
+
+
+@media(max-width: 950px){
+    .headingDeveloper{
+        height: 25%;
+        font-size: 20px;
+    }
+
+    .contentDeveloper{
+        height: 75%;
+        font-size: 12px;
+    }
+}
+
+@media(max-width:700px){
+    .logoFooter{
+        font-size: 30px;
+    }
+
+    .aboutDeveloper{
+        width: 60%;
+    }
+}
+
+
+
+
+@media(max-width:500px){
+    .logoFooter{
+        font-size: 20px;
+    }
+
+    .headingDeveloper{
+        font-size: 16px;
+    }
+
+    .contentDeveloper{
+        font-size: 11px;
+    }
+}
+
+
+
+
+.imageSocial{
+    overflow: hidden;
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logoSocial{
+    height: 5vh;
+    width: 5vh;
+    border: 2px solid white;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10000000000000px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+.copyright{
+    overflow: hidden;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+       font-family: "Bungee", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.508);
+}

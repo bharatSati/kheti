@@ -1,0 +1,108 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.pageCreateSimple{
+    position: relative;
+    height: auto;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.productPageCreateSimple{
+    padding-bottom: 80px;
+    padding-top: 80px;
+    position: relative;
+    z-index: 1;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.detailsContainerSimple{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 40px;
+    border-radius: 10px;
+    border: 2px solid white;
+    width: 80%;
+}
+
+.boxProductSimple{
+    height: auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.textProductSimple{
+    font-size: 20px;
+    color: white;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+}
+
+.inputFileSimple{
+    color: white;
+    width: 50%;
+}
+
+.inputFileSimple:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.textAreaSimple{
+    height: 8vh;
+    resize: none;
+    width: 50%;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 500;
+}
+
+.textAreaSimple:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.createSimpleBtn{
+    background-color: rgb(253, 255, 131);
+    padding: 20px;
+    width: 26%;
+    margin-left: 37%;
+    margin-top: auto;
+    font-size: 14px;
+    border-radius: 5px;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 800;
+    border: 0px;
+}
+
+.createSimpleBtn:hover{
+    box-shadow: 0px 0px 10px 1px white;
+}
+
+/* Responsive */
+@media (max-width:700px){
+  .textProductSimple{ font-size: 18px; }
+  .textAreaSimple{ font-size: 12px; }
+  .detailsContainerSimple{ padding: 20px; }
+}
+
+@media (max-width:500px){
+  .boxProductSimple{ flex-direction: column; padding: 20px; }
+  .textAreaSimple{ width: 80%; font-size: 12px; }
+  .inputFileSimple{ width: 80%; }
+  .createSimpleBtn{ width: 60%; margin-left: 20%; }
+}
