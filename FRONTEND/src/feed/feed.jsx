@@ -38,7 +38,7 @@ export default function Feed() {
             }
 
             const feedRes = await axios.get(
-                `https://kheti-yda3.vercel.app/getFeed?latitude=${latitude}&longitude=${longitude}`,
+                `https://kheti-yda3.vercel.app/feed/getFeed?latitude=${latitude}&longitude=${longitude}`,
                 { headers: { authorization: "Bearer " + localStorage.getItem("token") } }
             );
 
