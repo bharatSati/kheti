@@ -106,7 +106,7 @@ export default function Create(){
             input.append("policy",policy);
             input.append("type",type);
         try{
-            let response = await axios.post("https://kheti-yda3.vercel.app/add",input,{
+            let response = await axios.post("https://kheti-yda3.vercel.app/products/add",input,{
                 headers:{
                     authorization: "Bearer "+localStorage.getItem("token")}
     })

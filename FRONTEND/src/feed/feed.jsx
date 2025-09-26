@@ -16,11 +16,11 @@ export default function Feed() {
     const [feed, setFeed] = useState([]);
     const remPart = useRef();
 
-    // POTD state
+   
     const [potdFile, setPotdFile] = useState(null);
     const [isSubmitting, setIsSubmitting] = useState(false);
 
-    // Fetch feed on component mount
+   
     useEffect(() => {
         fetchFeed();
     }, []);
