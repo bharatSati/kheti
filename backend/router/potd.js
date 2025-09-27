@@ -29,7 +29,7 @@ router.get("/userPotd", authMiddleware, async (req, res) => {
         const potd = await Potd.find({ owner: userId });
         const mappedPotd = potd.map(p => ({
             image: p.image,
-            text: p.createdOn || "Uploaded On"
+            createdOn: p.createdOn || "Uploaded On"
         }));
         res.status(200).json(mappedPotd);
     } catch (err) {

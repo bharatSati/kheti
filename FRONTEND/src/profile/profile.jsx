@@ -130,7 +130,7 @@ export default function Profile() {
             year: "numeric",
           }),
         }))
-      : [{ image: bannerImg, text: "No Images Added Yet" }]
+      : [{ image: bannerImg, text: "DATE" }]
   }
   bend={0}
   textColor="#ffffff"
