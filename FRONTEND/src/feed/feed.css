@@ -165,7 +165,8 @@
 }
 
 .main{
-    margin: 5vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
     height: 70vh;
     width: 90%;
     display: flex;
@@ -330,7 +331,6 @@
 } */
 
 .main{
-    margin: 5vh;
     height: 60vh;
     width: 90%;
 }
@@ -347,7 +347,6 @@
 } 
 
 .main{
-   margin: 5vh;
     height: auto;
     width: 90%;
 }
