@@ -96,9 +96,6 @@
 
 }
 
-.submissisonSection input{
-    width: 10%;
-}
 
 
 .submitPotd{
@@ -121,7 +118,14 @@
 }
 
 
+@media(max-width:900px){
+    .submitPotd{
+  margin-left: 3%;
+ 
+}
 
+
+}
 
 
 
@@ -177,6 +181,8 @@
    font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
   font-weight: 500;
+  overflow: scroll;
+  scrollbar-width: 0px;
 }
 
 .cityFeed{
