@@ -72,8 +72,8 @@ function NavBar(){
                 <div className="logoNestMenu" onClick = {()=>{navigate("/")}}>K H E T I</div>
                 <div className="navLinks">
                     { signedIn ? 
-                    (<><div className="navItem" onClick = {()=>{navigate("/products")}}>F E E D</div>
-                       <div className="navItem" onClick = {()=>{navigate("/create")}}>S T O R E</div>
+                    (<><div className="navItem" onClick = {()=>{navigate("/feed")}}>F E E D</div>
+                       <div className="navItem" onClick = {()=>{navigate("/products")}}>S T O R E</div>
                        <div className="navItem" onClick = {()=>{navigate("/profile")}}>P R O F I L E</div></>) 
                        : 
                     (<><div className="navItem" onClick = {()=>{navigate("/signup")}}>S I G N &nbsp; U P</div>
@@ -94,8 +94,8 @@ function NavBar(){
 
             <div className="sideMenuOpen" ref = {menuRef}>
                 { signedIn ? 
-                    (<><div className="navItem" onClick = {()=>{navigate("/products")}}>F E E D</div>
-                       <div className="navItem" onClick = {()=>{navigate("/create")}}>S T O R E</div>
+                    (<><div className="navItem" onClick = {()=>{navigate("/feed")}}>F E E D</div>
+                       <div className="navItem" onClick = {()=>{navigate("/products")}}>S T O R E</div>
                        <div className="navItem" onClick = {()=>{navigate("/profile")}}>P R O F I L E</div></>) 
                        : 
                     (<><div className="navItem" onClick = {()=>{navigate("/signup")}}>S I G N &nbsp; U P</div>

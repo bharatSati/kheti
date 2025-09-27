@@ -26,13 +26,14 @@ export function NavBar2() {
   }, []);
 
   const demoItems = [
+    { link: "/", text: 'H O M E', image: '' },
     { link: "/feed", text: 'F E E D', image: '' },
     { link: "/products", text: 'S T O R E', image: '' },
     { link: "/profile", text: 'P R O F I L E', image: '' },
     { link: "/potd", text: 'P O T D', image: '' },
-    { link: "/", text: 'H O M E', image: '' },
-    { link: "/create", text: 'L I S T  P R O D U C T', image: '' },
     { link: "/postfeed", text: 'P O S T', image: '' },
+    { link: "/create", text: 'L I S T&nbsp;&nbsp;P R O D U C T', image: '' },
+    
   ];
 
   return (
