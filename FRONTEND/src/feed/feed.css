@@ -47,18 +47,6 @@
 }
 
 
-@media(max-width:1050px){
-    .potdCard{
-        width: 80%;
-    }
-}
-
-@media(max-width:600px){
-    .potdCard{
-        width: 90%;
-    }
-}
-
 .blurHolder{
     position: absolute;
     top: 0px;
@@ -129,6 +117,42 @@
 
 
 
+
+
+@media(max-width:1050px){
+    .potdCard{
+        width: 80%;
+    }
+}
+
+@media(max-width:600px){
+    .potdCard{
+        width: 90%;
+    }
+}
+
+@media(max-width:550px){
+    .submissisonSection{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    
+.submitPotd{
+  margin-left: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+}
+
+
+
+
 .feedContainer{
     display: flex;
     flex-direction: column;
@@ -181,9 +205,9 @@
    font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
   font-weight: 500;
-  overflow: scroll;
-  scrollbar-width: 0px;
-}
+   overflow: scroll;       
+  -ms-overflow-style: none; 
+  scrollbar-width: none;  } 
 
 .cityFeed{
     color: white;
