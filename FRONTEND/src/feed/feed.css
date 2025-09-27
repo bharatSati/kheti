@@ -168,7 +168,7 @@
     margin-top: 5vh;
     margin-bottom: 5vh;
     height: 70vh;
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -182,6 +182,7 @@
 
 .imageFeed img{
     height: 100%;
+    width: 100%;
     object-position: center;
     object-fit: cover;
     display: block;
@@ -208,7 +209,8 @@
   font-weight: 500;
    overflow: scroll;       
   -ms-overflow-style: none; 
-  scrollbar-width: none;  } 
+  scrollbar-width: none;
+ } 
 
 .cityFeed{
     color: white;
