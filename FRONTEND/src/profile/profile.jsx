@@ -120,12 +120,23 @@ export default function Profile() {
         
             <div className="roll" style={{ font: '500 14px "Roboto Mono", monospace', height: '600px', position: 'relative' }}>
                 <CircularGallery
-                    items={userPOTD.length ? userPOTD : [{ image: bannerImg, text: "No Images Addded Yet" }]}
-                    bend={0}
-                    textColor="#ffffff"
-                    borderRadius={0.05}
-                    scrollEase={0.02}
-                />
+  items={
+    userPOTD.length
+      ? userPOTD.map(potd => ({
+          image: potd.image,
+          text: new Date(potd.createdOn).toLocaleDateString("en-GB", {
+            day: "numeric",
+            month: "long",
+            year: "numeric",
+          }),
+        }))
+      : [{ image: bannerImg, text: "No Images Added Yet" }]
+  }
+  bend={0}
+  textColor="#ffffff"
+  borderRadius={0.05}
+  scrollEase={0.02}
+/>
             </div>
 
            
