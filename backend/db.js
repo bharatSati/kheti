@@ -74,6 +74,7 @@ const Feed = mongoose.model("Feed",feedSchema)
 
 const potdSchema = new mongoose.Schema({
   image : String,
+  createdOn: {type:Date , default: Date.now , index: {expires: "2d"}},
   owner: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
 });
 
