@@ -46,6 +46,19 @@
     flex-direction: column;
 }
 
+
+@media(max-width:1050px){
+    .potdCard{
+        width: 80%;
+    }
+}
+
+@media(max-width:600px){
+    .potdCard{
+        width: 90%;
+    }
+}
+
 .blurHolder{
     position: absolute;
     top: 0px;
@@ -115,6 +128,7 @@
     align-items: center;
     width: 100%;
     height: auto;
+    color: white;
 }
 
 .main{
