@@ -81,6 +81,7 @@
     height: auto;
     width: 100%;
     display: flex;
+    justify-content: space-between;
 
 }
 
@@ -97,7 +98,7 @@
   padding: 60px;
   padding-top: 15px;
   padding-bottom: 15px;
-  margin-left: 50%;
+  margin-right: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,50 +106,6 @@
   color: black;
 }
 
-
-@media(max-width:900px){
-    .submitPotd{
-  margin-left: 3%;
- 
-}
-
-
-}
-
-
-
-
-
-@media(max-width:1050px){
-    .potdCard{
-        width: 80%;
-    }
-}
-
-@media(max-width:600px){
-    .potdCard{
-        width: 90%;
-    }
-}
-
-@media(max-width:550px){
-    .submissisonSection{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-
-    
-.submitPotd{
-  margin-left: 0%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
- 
-}
-
-}
 
 
 
