@@ -96,6 +96,10 @@
 
 }
 
+.submissisonSection input{
+    width: 10%;
+}
+
 
 .submitPotd{
     width: 40%;

@@ -141,7 +141,7 @@ export default function Feed() {
                             city={post.city || "Unknown"}
                             name={post.ownerName || "Anonymous"}
                             avatar={post.ownerAvatar || User}
-                            date={post.createdAt ? new Date(post.createdAt).toLocaleDateString() : ""}
+                            date={post.createdOn ? new Date(post.createdOn).toLocaleDateString() : ""}
                         />
                     ))}
                 </div>
